@@ -16,6 +16,7 @@ main {
 
 .movie-search-div {
   margin-top: 2rem;
+  font-family: 'Noticia Text', serif;
 }
 
 .poster-img {
@@ -29,7 +30,7 @@ main {
 .single-movie-poster {
   height: 25rem;
   width: 18rem;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
 }
 
@@ -41,4 +42,9 @@ main {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.bold {
+  font-weight: 700;
+  color: #d75555;
 }

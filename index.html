@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Angular Movie App</title>
-  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Raleway:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -15,9 +16,9 @@
   <header class='header-footer'>
     <nav class='blue lighten-1'>
       <div class="nav-wrapper container">
-        <a href="" class="brand-logo">Galvanize Movie App</a>
+        <a ui-sref="home" class="brand-logo">Galvanize Movie App</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="">Github</a></li>
+          <li><a target="_blank" href="https://github.com/bradford-hamilton/galvanize-angular-movie-app">Github</a></li>
         </ul>
       </div>
     </nav>
@@ -28,7 +29,7 @@
     </main>
 
     <footer class="page-footer blue lighten-1 header-footer">
-      <div class="footer-copyright">
+      <div class="footer-copyright blue lighten-1">
         <div class="container">
           © 2014 Bradford Lamson-Scribner
         </div>
@@ -38,5 +39,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script src="app.js"></script>
+    <script src="services/MovieSearch.js"></script>
+    <script src="controllers/HomeController.js"></script>
+    <script src="controllers/ShowController.js"></script>
   </body>
 </html>
