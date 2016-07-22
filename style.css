@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #e9e9e9;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.header-footer {
+  font-family: 'Gentium Basic', serif;
+}
+
+.movie-search-div {
+  margin-top: 2rem;
+}
+
+.poster-img {
+  height: 18rem;
+}
+
+.card {
+  height: 28rem;
+}
+
+.single-movie-poster {
+  height: 25rem;
+  width: 18rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+
+.card-panel {
+  padding: 5px;
+}
+
+.elipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

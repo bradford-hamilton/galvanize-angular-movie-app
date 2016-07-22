@@ -1,0 +1,35 @@
+<div class='row movie-search-div'>
+  <div class="col l6 offset-l3 m6 offset-m3 s12 center ">
+    <h4 class='center'>Angular OMDb API Search</h4>
+    <h5 class='center'>Enter a movie by title.</h5>
+    <form class='col l6 offset-l3 m6 offset-m3 s12 center' ng-submit='submitMovieForm(searchForm)'>
+      <div class="input-field">
+        <input id="search" type="search" ng-model='searchForm.title' required>
+        <label for="search"><i class="material-icons">search</i></label>
+      </div>
+      <button class="btn waves-effect amber darken-1" type="submit" name="action">Submit
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ul ng-repeat='obj in view.searchData'>
+      <li class='col s12 m6 l4'>
+        <div class="card">
+          <div class="card-image">
+            <span class="card-title">Card Title</span>
+            <img ng-src="{{ obj.Poster }}" alt="No Movie Poster Available For This Film" class='poster-img'>
+            <div class="card-content">
+              <h6 class='center'>{{ obj.Title }}</h6>
+              <h6 class='center'>({{ obj.Year }})</h6>
+              <div class="card-action">
+                <a ui-sref="show({ movieId: obj.imdbID })">More Info!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
