@@ -1,0 +1,40 @@
+<div class='row movie-search-div'>
+  <div class="col l6 offset-l3 m6 offset-m3 s12 center ">
+    <h4 class='center'>Angular OMDb API Search</h4>
+    <h5 class='center'>Enter a movie by title.</h5>
+    <form class='col l6 offset-l3 m6 offset-m3 s12 center' ng-submit='submitMovieForm(searchForm)'>
+      <div class="input-field">
+        <input id="search" type="search" ng-model='searchForm.title' required>
+        <label for="search"><i class="material-icons">search</i></label>
+      </div>
+      <button class="btn waves-effect amber darken-1" type="submit" name="action" ui-sref="home({ movieNameSearch: searchForm.title })">Submit
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m8 l8 offset-m2 offset-l2">
+    <div class="card-panel lime lighten-3">
+      <div class="row">
+
+        <div class="col s12 l4">
+          <img ng-src="{{ movie.Poster }}" alt="No Poster Available" class='single-movie-poster'>
+        </div>
+
+        <div class="col s12 l7 offset-l1">
+          <h4 class='elipsis'>{{ movie.Title }}</h4>
+          <p class='elipsis'><span class='bold'>Actors: </span> {{ movie.Actors }}</p>
+          <p class='elipsis'><span class='bold'>Awards: </span>{{ movie.Awards }} </p>
+          <p class='elipsis'><span class='bold'>Director: </span>{{ movie.Director }} </p>
+          <p class='elipsis'><span class='bold'>Genre: </span>{{ movie.Genre }} </p>
+          <p class='elipsis'><span class='bold'>Metascore: </span>{{ movie.Metascore }} </p>
+          <p class='elipsis'><span class='bold'>IMDB Rating: </span>{{ movie.imdbRating }} </p>
+          <p class='elipsis'><span class='bold'>Plot: </span>{{ movie.Plot }} </p>
+          <p class='elipsis'><span class='bold'>Release Date: </span>{{ movie.Release }} </p>
+          <p class='elipsis'><span class='bold'>Runtime: </span>{{ movie.Runtime }} </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

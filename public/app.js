@@ -1,7 +1,7 @@
 var app = angular.module("MovieApp", ['ui.router']);
 
 app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $urlRouterProvider.otherwise("/");
+  // $urlRouterProvider.otherwise("/");
   $stateProvider
     .state('home', {
       url: '/?movieNameSearch',

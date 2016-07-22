@@ -1,0 +1,22 @@
+{
+  "name": "angular-movie-app",
+  "version": "1.0.0",
+  "description": "Movie search app built with Angular.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradford-hamilton/galvanize-angular-movie-app.git"
+  },
+  "author": "Bradford Lamson-Scribner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradford-hamilton/galvanize-angular-movie-app/issues"
+  },
+  "homepage": "https://github.com/bradford-hamilton/galvanize-angular-movie-app#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
